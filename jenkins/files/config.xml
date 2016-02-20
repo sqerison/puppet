@@ -76,7 +76,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
-        <string>OMS</string>
+        <string>Project</string>
       </jobNames>
       <jobFilters/>
       <columns>
