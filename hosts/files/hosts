@@ -1,0 +1,29 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+:1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+#puppet master
+192.168.103.185 puppet.training.local puppet
+#DOM-0
+192.168.103.138 CLASS77.training.local CLASS
+#git
+192.168.103.155 gitlab.training.local gitlab
+#repo
+192.168.103.182 nexus.training.local nexus
+#bild tool
+192.168.103.224 jenkins.training.local jenkins
+#databases balancer
+192.168.103.167 haproxy.training.local haproxy
+#databases
+192.168.103.243 mariadb1.training.local mariadb1
+192.168.103.162 mariadb2.training.local mariadb2
+192.168.103.154 mariadb3.training.local mariadb3
+#httpd and nginx balancers
+192.168.103.217 balancer1.training.local balancer1
+192.168.103.191 balancer2.training.local balancer2
+#tomcat
+192.168.103.164 tomcat1.training.local tomcat1
+192.168.103.177 tomcat2.training.local tomcat2
+192.168.103.175 tomcat3.training.local tomcat3
+#test
+
+
+

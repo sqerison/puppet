@@ -1,0 +1,9 @@
+[yum]
+name=yum_repo
+baseurl=http://nexus.training.local:8081/nexus/content/repositories/yum
+enabled=1
+protect=0
+gpgcheck=0
+metadata_expire=30s
+autorefresh=1
+type=rpm-md

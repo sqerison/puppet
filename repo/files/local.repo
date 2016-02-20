@@ -1,0 +1,6 @@
+[locarepo]
+name = local repo
+baseurl=http://class77.training.local/repo/
+gpgcheck=0
+enabled=1
+
