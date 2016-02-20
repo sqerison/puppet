@@ -36,18 +36,6 @@ class jenkins::config {
        group => 'jenkins',
        mode => '755',
     }
-    file {"/var/lib/jenkins/plugins/aws-java-sdk.jpi":
-       source => "puppet:///modules/jenkins/aws-java-sdk.jpi",
-       owner => 'jenkins',
-       group => 'jenkins',
-       mode => '644',     
-     }
-    file {"/var/lib/jenkins/plugins/copyartifact.jpi":
-       source => "puppet:///modules/jenkins/copyartifact.jpi",
-       owner => 'jenkins',
-       group => 'jenkins',
-       mode => '644',     
-     }
     file {"/var/lib/jenkins/plugins/credentials.jpi":
        source => "puppet:///modules/jenkins/credentials.jpi",
        owner => 'jenkins',
@@ -60,20 +48,8 @@ class jenkins::config {
        group => 'jenkins',
        mode => '644',     
      }
-    file {"/var/lib/jenkins/plugins/github.jpi":
-       source => "puppet:///modules/jenkins/github.jpi",
-       owner => 'jenkins',
-       group => 'jenkins',
-       mode => '644',     
-     }
     file {"/var/lib/jenkins/plugins/icon-shim.jpi":
        source => "puppet:///modules/jenkins/icon-shim.jpi",
-       owner => 'jenkins',
-       group => 'jenkins',
-       mode => '644',     
-     }
-    file {"/var/lib/jenkins/plugins/jackson2-api.jpi":
-       source => "puppet:///modules/jenkins/jackson2-api.jpi",
        owner => 'jenkins',
        group => 'jenkins',
        mode => '644',     
@@ -96,42 +72,16 @@ class jenkins::config {
        group => 'jenkins',
        mode => '644',     
      }
-
-    file {"/var/lib/jenkins/plugins/maven-plugin.jpi":
-       source => "puppet:///modules/jenkins/maven-plugin.jpi",
-       owner => 'jenkins',
-       group => 'jenkins',
-       mode => '644',     
-     }
-    file {"/var/lib/jenkins/plugins/plain-credentials.jpi":
-       source => "puppet:///modules/jenkins/plain-credentials.jpi",
-       owner => 'jenkins',
-       group => 'jenkins',
-       mode => '644',     
-     }
-    file {"/var/lib/jenkins/plugins/s3.jpi":
-       source => "puppet:///modules/jenkins/s3.jpi",
-       owner => 'jenkins',
-       group => 'jenkins',
-       mode => '644',     
-     }
-    file {"/var/lib/jenkins/plugins/scm-api.jpi":
-       source => "puppet:///modules/jenkins/scm-api.jpi",
-       owner => 'jenkins',
-       group => 'jenkins',
-       mode => '644',     
-     }
     file {"/var/lib/jenkins/plugins/ssh-credentials.jpi":
        source => "puppet:///modules/jenkins/ssh-credentials.jpi",
        owner => 'jenkins',
        group => 'jenkins',
        mode => '644',     
      }
-    file {"/var/lib/jenkins/plugins/token-macro.jpi":
-       source => "puppet:///modules/jenkins/token-macro.jpi",
+    file {"/var/lib/jenkins/plugins/git-client.jpi":
+       source => "puppet:///modules/jenkins/git-client.jpi",
        owner => 'jenkins',
        group => 'jenkins',
        mode => '644',     
      }
-
 }
