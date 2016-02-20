@@ -51,7 +51,7 @@
   <jdks>
     <jdk>
       <name>Java 1.7.0</name>
-      <home>/opt/jdk1.7.0_79</home>
+      <home>/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.95.x86_64/jre</home>
       <properties/>
     </jdk>
   </jdks>
