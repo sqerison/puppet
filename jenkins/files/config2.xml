@@ -81,7 +81,7 @@
   <runPostStepsIfResult>
     <name>SUCCESS</name>
     <ordinal>0</ordinal>
-    <color>BLUE</color>
+    <color>GREEN</color>
     <completeBuild>true</completeBuild>
   </runPostStepsIfResult>
 </maven2-moduleset>
