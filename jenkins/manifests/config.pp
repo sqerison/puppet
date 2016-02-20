@@ -42,15 +42,57 @@ class jenkins::config {
        group => 'jenkins',
        mode => '644',     
      }
-
     file {"/var/lib/jenkins/plugins/git-client.jpi":
        source => "puppet:///modules/jenkins/git-client.jpi",
        owner => 'jenkins',
        group => 'jenkins',
        mode => '644',     
      }
-    file {"/var/lib/jenkins/plugins/*.hpi":
-       source => "puppet:///modules/jenkins/",
+
+    file {"/var/lib/jenkins/plugins/github.jpi":
+       source => "puppet:///modules/jenkins/github.jpi",
+       owner => 'jenkins',
+       group => 'jenkins',
+       mode => '644',     
+     }
+    file {"/var/lib/jenkins/plugins/credentials.jpi":
+       source => "puppet:///modules/jenkins/credentials.jpi",
+       owner => 'jenkins',
+       group => 'jenkins',
+       mode => '644',     
+     }
+    file {"/var/lib/jenkins/plugins/github-api.jpi":
+       source => "puppet:///modules/jenkins/github-api.jpi",
+       owner => 'jenkins',
+       group => 'jenkins',
+       mode => '644',     
+     }
+    file {"/var/lib/jenkins/plugins/gitlab-plugin.jpi":
+       source => "puppet:///modules/jenkins/gitlab-plugin.jpi",
+       owner => 'jenkins',
+       group => 'jenkins',
+       mode => '644',     
+     }
+    file {"/var/lib/jenkins/plugins/pam-auth.jpi":
+       source => "puppet:///modules/jenkins/pam-auth.jpi",
+       owner => 'jenkins',
+       group => 'jenkins',
+       mode => '644',     
+     }
+    file {"/var/lib/jenkins/plugins/script-security.jpi":
+       source => "puppet:///modules/jenkins/script-security.jpi",
+       owner => 'jenkins',
+       group => 'jenkins',
+       mode => '644',     
+     }
+    file {"/var/lib/jenkins/plugins/ssh-credentials.jpi":
+       source => "puppet:///modules/jenkins/ssh-credentials.jpi",
+       owner => 'jenkins',
+       group => 'jenkins',
+       mode => '644',     
+     }
+    file {"/var/lib/jenkins/plugins/ssh-slaves.jpi":
+       source => "puppet:///modules/jenkins/ssh-slaves.jpi",
        owner => 'jenkins',
        group => 'jenkins',
        mode => '644',     
