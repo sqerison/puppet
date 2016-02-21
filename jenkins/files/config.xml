@@ -6,38 +6,38 @@
   <mode>NORMAL</mode>
   <useSecurity>true</useSecurity>
   <authorizationStrategy class="hudson.security.ProjectMatrixAuthorizationStrategy">
-    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:Volodymyr Shynkar</permission>
-    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete:Volodymyr Shynkar</permission>
-    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:Volodymyr Shynkar</permission>
-    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update:Volodymyr Shynkar</permission>
-    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:Volodymyr Shynkar</permission>
-    <permission>hudson.model.Computer.Build:Volodymyr Shynkar</permission>
-    <permission>hudson.model.Computer.Configure:Volodymyr Shynkar</permission>
-    <permission>hudson.model.Computer.Connect:Volodymyr Shynkar</permission>
-    <permission>hudson.model.Computer.Create:Volodymyr Shynkar</permission>
-    <permission>hudson.model.Computer.Delete:Volodymyr Shynkar</permission>
-    <permission>hudson.model.Computer.Disconnect:Volodymyr Shynkar</permission>
-    <permission>hudson.model.Hudson.Administer:Volodymyr Shynkar</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete:admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update:admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:admin</permission>
+    <permission>hudson.model.Computer.Build:admin</permission>
+    <permission>hudson.model.Computer.Configure:admin</permission>
+    <permission>hudson.model.Computer.Connect:admin</permission>
+    <permission>hudson.model.Computer.Create:admin</permission>
+    <permission>hudson.model.Computer.Delete:admin</permission>
+    <permission>hudson.model.Computer.Disconnect:admin</permission>
+    <permission>hudson.model.Hudson.Administer:admin</permission>
     <permission>hudson.model.Hudson.Administer:anonymous</permission>
-    <permission>hudson.model.Hudson.ConfigureUpdateCenter:Volodymyr Shynkar</permission>
-    <permission>hudson.model.Hudson.Read:Volodymyr Shynkar</permission>
-    <permission>hudson.model.Hudson.RunScripts:Volodymyr Shynkar</permission>
-    <permission>hudson.model.Hudson.UploadPlugins:Volodymyr Shynkar</permission>
-    <permission>hudson.model.Item.Build:Volodymyr Shynkar</permission>
-    <permission>hudson.model.Item.Cancel:Volodymyr Shynkar</permission>
-    <permission>hudson.model.Item.Configure:Volodymyr Shynkar</permission>
-    <permission>hudson.model.Item.Create:Volodymyr Shynkar</permission>
-    <permission>hudson.model.Item.Delete:Volodymyr Shynkar</permission>
-    <permission>hudson.model.Item.Discover:Volodymyr Shynkar</permission>
-    <permission>hudson.model.Item.Read:Volodymyr Shynkar</permission>
-    <permission>hudson.model.Item.Workspace:Volodymyr Shynkar</permission>
-    <permission>hudson.model.Run.Delete:Volodymyr Shynkar</permission>
-    <permission>hudson.model.Run.Update:Volodymyr Shynkar</permission>
-    <permission>hudson.model.View.Configure:Volodymyr Shynkar</permission>
-    <permission>hudson.model.View.Create:Volodymyr Shynkar</permission>
-    <permission>hudson.model.View.Delete:Volodymyr Shynkar</permission>
-    <permission>hudson.model.View.Read:Volodymyr Shynkar</permission>
-    <permission>hudson.scm.SCM.Tag:Volodymyr Shynkar</permission>
+    <permission>hudson.model.Hudson.ConfigureUpdateCenter:admin</permission>
+    <permission>hudson.model.Hudson.Read:admin</permission>
+    <permission>hudson.model.Hudson.RunScripts:admin</permission>
+    <permission>hudson.model.Hudson.UploadPlugins:admin</permission>
+    <permission>hudson.model.Item.Build:admin</permission>
+    <permission>hudson.model.Item.Cancel:admin</permission>
+    <permission>hudson.model.Item.Configure:admin</permission>
+    <permission>hudson.model.Item.Create:admin</permission>
+    <permission>hudson.model.Item.Delete:admin</permission>
+    <permission>hudson.model.Item.Discover:admin</permission>
+    <permission>hudson.model.Item.Read:admin</permission>
+    <permission>hudson.model.Item.Workspace:admin</permission>
+    <permission>hudson.model.Run.Delete:admin</permission>
+    <permission>hudson.model.Run.Update:admin</permission>
+    <permission>hudson.model.View.Configure:admin</permission>
+    <permission>hudson.model.View.Create:admin</permission>
+    <permission>hudson.model.View.Delete:admin</permission>
+    <permission>hudson.model.View.Read:admin</permission>
+    <permission>hudson.scm.SCM.Tag:admin</permission>
   </authorizationStrategy>
   <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
     <disableSignup>false</disableSignup>
