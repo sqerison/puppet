@@ -75,7 +75,7 @@
   <prebuilders/>
   <postbuilders>
     <hudson.tasks.Shell>
-      <command>#cp /var/lib/jenkins/workspace/Project/target/*.war /usr/share/tomcat/webapps/</command>
+      <command>cp /var/lib/jenkins/workspace/Project/target/*.war /usr/share/tomcat6/webapps/</command>
     </hudson.tasks.Shell>
   </postbuilders>
   <runPostStepsIfResult>

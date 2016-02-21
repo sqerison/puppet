@@ -6,38 +6,38 @@
   <mode>NORMAL</mode>
   <useSecurity>true</useSecurity>
   <authorizationStrategy class="hudson.security.ProjectMatrixAuthorizationStrategy">
-    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:Roman_Belmega</permission>
-    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete:Roman_Belmega</permission>
-    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:Roman_Belmega</permission>
-    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update:Roman_Belmega</permission>
-    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:Roman_Belmega</permission>
-    <permission>hudson.model.Computer.Build:Roman_Belmega</permission>
-    <permission>hudson.model.Computer.Configure:Roman_Belmega</permission>
-    <permission>hudson.model.Computer.Connect:Roman_Belmega</permission>
-    <permission>hudson.model.Computer.Create:Roman_Belmega</permission>
-    <permission>hudson.model.Computer.Delete:Roman_Belmega</permission>
-    <permission>hudson.model.Computer.Disconnect:Roman_Belmega</permission>
-    <permission>hudson.model.Hudson.Administer:Roman_Belmega</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:Volodymyr Shynkar</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete:Volodymyr Shynkar</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:Volodymyr Shynkar</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update:Volodymyr Shynkar</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:Volodymyr Shynkar</permission>
+    <permission>hudson.model.Computer.Build:Volodymyr Shynkar</permission>
+    <permission>hudson.model.Computer.Configure:Volodymyr Shynkar</permission>
+    <permission>hudson.model.Computer.Connect:Volodymyr Shynkar</permission>
+    <permission>hudson.model.Computer.Create:Volodymyr Shynkar</permission>
+    <permission>hudson.model.Computer.Delete:Volodymyr Shynkar</permission>
+    <permission>hudson.model.Computer.Disconnect:Volodymyr Shynkar</permission>
+    <permission>hudson.model.Hudson.Administer:Volodymyr Shynkar</permission>
     <permission>hudson.model.Hudson.Administer:anonymous</permission>
-    <permission>hudson.model.Hudson.ConfigureUpdateCenter:Roman_Belmega</permission>
-    <permission>hudson.model.Hudson.Read:Roman_Belmega</permission>
-    <permission>hudson.model.Hudson.RunScripts:Roman_Belmega</permission>
-    <permission>hudson.model.Hudson.UploadPlugins:Roman_Belmega</permission>
-    <permission>hudson.model.Item.Build:Roman_Belmega</permission>
-    <permission>hudson.model.Item.Cancel:Roman_Belmega</permission>
-    <permission>hudson.model.Item.Configure:Roman_Belmega</permission>
-    <permission>hudson.model.Item.Create:Roman_Belmega</permission>
-    <permission>hudson.model.Item.Delete:Roman_Belmega</permission>
-    <permission>hudson.model.Item.Discover:Roman_Belmega</permission>
-    <permission>hudson.model.Item.Read:Roman_Belmega</permission>
-    <permission>hudson.model.Item.Workspace:Roman_Belmega</permission>
-    <permission>hudson.model.Run.Delete:Roman_Belmega</permission>
-    <permission>hudson.model.Run.Update:Roman_Belmega</permission>
-    <permission>hudson.model.View.Configure:Roman_Belmega</permission>
-    <permission>hudson.model.View.Create:Roman_Belmega</permission>
-    <permission>hudson.model.View.Delete:Roman_Belmega</permission>
-    <permission>hudson.model.View.Read:Roman_Belmega</permission>
-    <permission>hudson.scm.SCM.Tag:Roman_Belmega</permission>
+    <permission>hudson.model.Hudson.ConfigureUpdateCenter:Volodymyr Shynkar</permission>
+    <permission>hudson.model.Hudson.Read:Volodymyr Shynkar</permission>
+    <permission>hudson.model.Hudson.RunScripts:Volodymyr Shynkar</permission>
+    <permission>hudson.model.Hudson.UploadPlugins:Volodymyr Shynkar</permission>
+    <permission>hudson.model.Item.Build:Volodymyr Shynkar</permission>
+    <permission>hudson.model.Item.Cancel:Volodymyr Shynkar</permission>
+    <permission>hudson.model.Item.Configure:Volodymyr Shynkar</permission>
+    <permission>hudson.model.Item.Create:Volodymyr Shynkar</permission>
+    <permission>hudson.model.Item.Delete:Volodymyr Shynkar</permission>
+    <permission>hudson.model.Item.Discover:Volodymyr Shynkar</permission>
+    <permission>hudson.model.Item.Read:Volodymyr Shynkar</permission>
+    <permission>hudson.model.Item.Workspace:Volodymyr Shynkar</permission>
+    <permission>hudson.model.Run.Delete:Volodymyr Shynkar</permission>
+    <permission>hudson.model.Run.Update:Volodymyr Shynkar</permission>
+    <permission>hudson.model.View.Configure:Volodymyr Shynkar</permission>
+    <permission>hudson.model.View.Create:Volodymyr Shynkar</permission>
+    <permission>hudson.model.View.Delete:Volodymyr Shynkar</permission>
+    <permission>hudson.model.View.Read:Volodymyr Shynkar</permission>
+    <permission>hudson.scm.SCM.Tag:Volodymyr Shynkar</permission>
   </authorizationStrategy>
   <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
     <disableSignup>false</disableSignup>
