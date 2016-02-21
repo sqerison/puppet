@@ -36,50 +36,56 @@ class jenkins::config {
        group => 'jenkins',
        mode => '755',
     }
-    file {"/var/lib/jenkins/plugins/credentials.jpi":
-       source => "puppet:///modules/jenkins/credentials.jpi",
+    file {"/var/lib/jenkins/plugins/credentials.hpi":
+       source => "http://mirrors.jenkins-ci.org/plugins/credentials/latest/credentials.hpi",
        owner => 'jenkins',
        group => 'jenkins',
        mode => '644',     
      }
-    file {"/var/lib/jenkins/plugins/git.jpi":
-       source => "puppet:///modules/jenkins/git.jpi",
+    file {"/var/lib/jenkins/plugins/git.hpi":
+       source => "http://mirrors.jenkins-ci.org/plugins/git/latest/git.hpi",
        owner => 'jenkins',
        group => 'jenkins',
        mode => '644',     
      }
-    file {"/var/lib/jenkins/plugins/icon-shim.jpi":
-       source => "puppet:///modules/jenkins/icon-shim.jpi",
+    file {"/var/lib/jenkins/plugins/junit.hpi":
+       source => "http://mirrors.jenkins-ci.org/plugins/junit/latest/junit.hpi",
        owner => 'jenkins',
        group => 'jenkins',
        mode => '644',     
      }
-    file {"/var/lib/jenkins/plugins/junit.jpi":
-       source => "puppet:///modules/jenkins/junit.jpi",
+    file {"/var/lib/jenkins/plugins/mailer.hpi":
+       source => "http://mirrors.jenkins-ci.org/plugins/mailer/latest/mailer.hpi",
        owner => 'jenkins',
        group => 'jenkins',
        mode => '644',     
      }
-    file {"/var/lib/jenkins/plugins/mailer.jpi":
-       source => "puppet:///modules/jenkins/mailer.jpi",
+    file {"/var/lib/jenkins/plugins/matrix-project.hpi":
+       source => "http://mirrors.jenkins-ci.org/plugins/matrix-project/latest/matrix-project.hpi",
        owner => 'jenkins',
        group => 'jenkins',
        mode => '644',     
      }
-    file {"/var/lib/jenkins/plugins/matrix-project.jpi":
-       source => "puppet:///modules/jenkins/matrix-project.jpi",
+    file {"/var/lib/jenkins/plugins/ssh-credentials.hpi":
+       source => "http://mirrors.jenkins-ci.org/plugins/ssh-credentials/latest/ssh-credentials.hpi",
        owner => 'jenkins',
        group => 'jenkins',
        mode => '644',     
      }
-    file {"/var/lib/jenkins/plugins/ssh-credentials.jpi":
-       source => "puppet:///modules/jenkins/ssh-credentials.jpi",
+    file {"/var/lib/jenkins/plugins/git-client.hpi":
+       source => "http://mirrors.jenkins-ci.org/plugins/git-client/latest/git-client.hpi",
        owner => 'jenkins',
        group => 'jenkins',
        mode => '644',     
      }
-    file {"/var/lib/jenkins/plugins/git-client.jpi":
-       source => "puppet:///modules/jenkins/git-client.jpi",
+    file {"/var/lib/jenkins/plugins/scm-api.hpi":
+       source => "http://mirrors.jenkins-ci.org/plugins/scm-api/latest/scm-api.hpi",
+       owner => 'jenkins',
+       group => 'jenkins',
+       mode => '644',     
+     }
+    file {"/var/lib/jenkins/plugins/github.hpi":
+       source => "http://mirrors.jenkins-ci.org/plugins/github/latest/github.hpi",
        owner => 'jenkins',
        group => 'jenkins',
        mode => '644',     
