@@ -23,6 +23,10 @@ class jenkins::config {
       owner => 'jenkins',
       group => 'jenkins',
     }
+    file { "/var/lib/tomcat6/webapps/":
+      ensure => "directory",
+      mode => '777',
+    }
     file { "/var/lib/jenkins/jobs/Project/config.xml":
       ensure => "file",
       mode => '644',
