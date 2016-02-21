@@ -18,23 +18,6 @@ class jenkins::config {
       owner => 'jenkins',
       group => 'jenkins',
     }
-    file { "/var/lib/jenkins/users":
-      ensure => "directory",
-      owner => 'jenkins',
-      group => 'jenkins',
-    }
-    file { "/var/lib/jenkins/users/admin":
-      ensure => "directory",
-      owner => 'jenkins',
-      group => 'jenkins',
-    }
-    file { "/var/lib/jenkins/users/admin/config.xml":
-      ensure => "file",
-      mode => '644',
-      owner => 'jenkins',
-      group => 'jenkins',
-      source => "puppet:///modules/jenkins/config_user.xml",
-    }
     file { "/var/lib/jenkins/jobs/Project":
       ensure => "directory",
       owner => 'jenkins',
