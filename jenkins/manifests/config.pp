@@ -23,7 +23,12 @@ class jenkins::config {
       owner => 'jenkins',
       group => 'jenkins',
     }
-    file { "/var/lib/jenkins/users/config.xml":
+    file { "/var/lib/jenkins/users/admin":
+      ensure => "directory",
+      owner => 'jenkins',
+      group => 'jenkins',
+    }
+    file { "/var/lib/jenkins/users/admin/config.xml":
       ensure => "file",
       mode => '644',
       owner => 'jenkins',
