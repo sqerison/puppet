@@ -3,12 +3,7 @@
   <actions/>
   <description></description>
   <keepDependencies>false</keepDependencies>
-  <properties>
-    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.17.0">
-      <projectUrl>https://github.com/sqerison/Project/</projectUrl>
-      <displayName></displayName>
-    </com.coravy.hudson.plugins.github.GithubProjectProperty>
-  </properties>
+  <properties/>
   <scm class="hudson.plugins.git.GitSCM" plugin="git@2.4.2">
     <configVersion>2</configVersion>
     <userRemoteConfigs>
@@ -29,26 +24,7 @@
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
-  <triggers>
-    <com.cloudbees.jenkins.GitHubPushTrigger plugin="github@1.17.0">
-      <spec></spec>
-    </com.cloudbees.jenkins.GitHubPushTrigger>
-    <com.dabsquared.gitlabjenkins.GitLabPushTrigger plugin="gitlab-plugin@1.1.28">
-      <spec></spec>
-      <triggerOnPush>true</triggerOnPush>
-      <triggerOnMergeRequest>true</triggerOnMergeRequest>
-      <triggerOpenMergeRequestOnPush>never</triggerOpenMergeRequestOnPush>
-      <ciSkip>true</ciSkip>
-      <setBuildDescription>true</setBuildDescription>
-      <addNoteOnMergeRequest>true</addNoteOnMergeRequest>
-      <addCiMessage>true</addCiMessage>
-      <addVoteOnMergeRequest>true</addVoteOnMergeRequest>
-      <allowAllBranches>false</allowAllBranches>
-      <includeBranchesSpec></includeBranchesSpec>
-      <excludeBranchesSpec></excludeBranchesSpec>
-      <acceptMergeRequestOnSuccess>false</acceptMergeRequestOnSuccess>
-    </com.dabsquared.gitlabjenkins.GitLabPushTrigger>
-  </triggers>
+  <triggers/>
   <concurrentBuild>false</concurrentBuild>
   <rootModule>
     <groupId>ua.pp.pzs</groupId>
@@ -70,7 +46,31 @@
   <settings class="jenkins.mvn.DefaultSettingsProvider"/>
   <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
   <reporters/>
-  <publishers/>
+  <publishers>
+    <hudson.plugins.s3.S3BucketPublisher plugin="s3@0.8">
+      <profileName>Project</profileName>
+      <entries>
+        <hudson.plugins.s3.Entry>
+          <bucket>inf-deploy/Production/${JOB_NAME}</bucket>
+          <sourceFile>**target/*.war</sourceFile>
+          <storageClass>STANDARD</storageClass>
+          <selectedRegion>us-west-2</selectedRegion>
+          <noUploadOnFailure>true</noUploadOnFailure>
+          <uploadFromSlave>false</uploadFromSlave>
+          <managedArtifacts>false</managedArtifacts>
+          <useServerSideEncryption>false</useServerSideEncryption>
+          <flatten>true</flatten>
+        </hudson.plugins.s3.Entry>
+      </entries>
+      <dontWaitForConcurrentBuildCompletion>false</dontWaitForConcurrentBuildCompletion>
+      <userMetadata>
+        <hudson.plugins.s3.MetadataPair>
+          <key></key>
+          <value></value>
+        </hudson.plugins.s3.MetadataPair>
+      </userMetadata>
+    </hudson.plugins.s3.S3BucketPublisher>
+  </publishers>
   <buildWrappers/>
   <prebuilders/>
   <postbuilders>
@@ -81,7 +81,7 @@
   <runPostStepsIfResult>
     <name>SUCCESS</name>
     <ordinal>0</ordinal>
-    <color>GREEN</color>
+    <color>BLUE</color>
     <completeBuild>true</completeBuild>
   </runPostStepsIfResult>
 </maven2-moduleset>
