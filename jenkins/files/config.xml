@@ -6,41 +6,41 @@
   <mode>NORMAL</mode>
   <useSecurity>true</useSecurity>
   <authorizationStrategy class="hudson.security.ProjectMatrixAuthorizationStrategy">
-    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:Roman_Belmega</permission>
-    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete:Roman_Belmega</permission>
-    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:Roman_Belmega</permission>
-    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update:Roman_Belmega</permission>
-    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:Roman_Belmega</permission>
-    <permission>hudson.model.Computer.Build:Roman_Belmega</permission>
-    <permission>hudson.model.Computer.Configure:Roman_Belmega</permission>
-    <permission>hudson.model.Computer.Connect:Roman_Belmega</permission>
-    <permission>hudson.model.Computer.Create:Roman_Belmega</permission>
-    <permission>hudson.model.Computer.Delete:Roman_Belmega</permission>
-    <permission>hudson.model.Computer.Disconnect:Roman_Belmega</permission>
-    <permission>hudson.model.Hudson.Administer:Roman_Belmega</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete:admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update:admin</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:admin</permission>
+    <permission>hudson.model.Computer.Build:admin</permission>
+    <permission>hudson.model.Computer.Configure:admin</permission>
+    <permission>hudson.model.Computer.Connect:admin</permission>
+    <permission>hudson.model.Computer.Create:admin</permission>
+    <permission>hudson.model.Computer.Delete:admin</permission>
+    <permission>hudson.model.Computer.Disconnect:admin</permission>
+    <permission>hudson.model.Hudson.Administer:admin</permission>
     <permission>hudson.model.Hudson.Administer:anonymous</permission>
-    <permission>hudson.model.Hudson.ConfigureUpdateCenter:Roman_Belmega</permission>
-    <permission>hudson.model.Hudson.Read:Roman_Belmega</permission>
-    <permission>hudson.model.Hudson.RunScripts:Roman_Belmega</permission>
-    <permission>hudson.model.Hudson.UploadPlugins:Roman_Belmega</permission>
-    <permission>hudson.model.Item.Build:Roman_Belmega</permission>
-    <permission>hudson.model.Item.Cancel:Roman_Belmega</permission>
-    <permission>hudson.model.Item.Configure:Roman_Belmega</permission>
-    <permission>hudson.model.Item.Create:Roman_Belmega</permission>
-    <permission>hudson.model.Item.Delete:Roman_Belmega</permission>
-    <permission>hudson.model.Item.Discover:Roman_Belmega</permission>
-    <permission>hudson.model.Item.Read:Roman_Belmega</permission>
-    <permission>hudson.model.Item.Workspace:Roman_Belmega</permission>
-    <permission>hudson.model.Run.Delete:Roman_Belmega</permission>
-    <permission>hudson.model.Run.Update:Roman_Belmega</permission>
-    <permission>hudson.model.View.Configure:Roman_Belmega</permission>
-    <permission>hudson.model.View.Create:Roman_Belmega</permission>
-    <permission>hudson.model.View.Delete:Roman_Belmega</permission>
-    <permission>hudson.model.View.Read:Roman_Belmega</permission>
-    <permission>hudson.scm.SCM.Tag:Roman_Belmega</permission>
+    <permission>hudson.model.Hudson.ConfigureUpdateCenter:admin</permission>
+    <permission>hudson.model.Hudson.Read:admin</permission>
+    <permission>hudson.model.Hudson.RunScripts:admin</permission>
+    <permission>hudson.model.Hudson.UploadPlugins:admin</permission>
+    <permission>hudson.model.Item.Build:admin</permission>
+    <permission>hudson.model.Item.Cancel:admin</permission>
+    <permission>hudson.model.Item.Configure:admin</permission>
+    <permission>hudson.model.Item.Create:admin</permission>
+    <permission>hudson.model.Item.Delete:admin</permission>
+    <permission>hudson.model.Item.Discover:admin</permission>
+    <permission>hudson.model.Item.Read:admin</permission>
+    <permission>hudson.model.Item.Workspace:admin</permission>
+    <permission>hudson.model.Run.Delete:admin</permission>
+    <permission>hudson.model.Run.Update:admin</permission>
+    <permission>hudson.model.View.Configure:admin</permission>
+    <permission>hudson.model.View.Create:admin</permission>
+    <permission>hudson.model.View.Delete:admin</permission>
+    <permission>hudson.model.View.Read:admin</permission>
+    <permission>hudson.scm.SCM.Tag:admin</permission>
   </authorizationStrategy>
   <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
-    <disableSignup>false</disableSignup>
+    <disableSignup>true</disableSignup>
     <enableCaptcha>false</enableCaptcha>
   </securityRealm>
   <disableRememberMe>false</disableRememberMe>

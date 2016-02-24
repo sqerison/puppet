@@ -94,4 +94,28 @@ class jenkins::config {
        group => 'jenkins',
        mode => '644',     
      }
+    file {"/var/lib/jenkins/plugins/jackson2-api.hpi":
+       source => "puppet:///modules/jenkins/jackson2-api.hpi",
+       owner => 'jenkins',
+       group => 'jenkins',
+       mode => '644',     
+     }
+    file {"/var/lib/jenkins/plugins/aws-java-sdk.hpi":
+       source => "puppet:///modules/jenkins/aws-java-sdk.hpi",
+       owner => 'jenkins',
+       group => 'jenkins',
+       mode => '644',     
+     }
+    file {"/var/lib/jenkins/plugins/copyartifact.hpi":
+       source => "puppet:///modules/jenkins/copyartifact.hpi",
+       owner => 'jenkins',
+       group => 'jenkins',
+       mode => '644',     
+     }
+    file {"/var/lib/jenkins/plugins/s3.hpi":
+       source => "puppet:///modules/jenkins/s3.hpi",
+       owner => 'jenkins',
+       group => 'jenkins',
+       mode => '644',     
+     }
 }
