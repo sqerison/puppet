@@ -13,6 +13,14 @@ class jenkins::config {
       group => 'jenkins',
       source => "puppet:///modules/jenkins/hudson.tasks.Maven.xml",
     }
+    file { "/var/lib/jenkins/hudson.plugins.s3.S3BucketPublisher.xml":
+      ensure => file,
+      mode => '644',
+      owner => 'jenkins',
+      group => 'jenkins',
+      source => "puppet:///modules/jenkins/hudson.plugins.s3.S3BucketPublisher.xml",
+    }
+
     file { "/var/lib/jenkins/jobs":
       ensure => "directory",
       owner => 'jenkins',
