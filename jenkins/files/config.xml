@@ -18,7 +18,6 @@
     <permission>hudson.model.Computer.Delete:admin</permission>
     <permission>hudson.model.Computer.Disconnect:admin</permission>
     <permission>hudson.model.Hudson.Administer:admin</permission>
-    <permission>hudson.model.Hudson.Administer:anonymous</permission>
     <permission>hudson.model.Hudson.ConfigureUpdateCenter:admin</permission>
     <permission>hudson.model.Hudson.Read:admin</permission>
     <permission>hudson.model.Hudson.RunScripts:admin</permission>
